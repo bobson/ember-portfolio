@@ -1,0 +1,31 @@
+<!-- app/templates/components/hero-image.hbs -->
+<section
+  id="hero"
+  class="relative h-screen px-3 md:px-10 lg:px-[15%] bg-contain bg-center bg-no-repeat"
+  style="background-image: url('/images/hero.png');"
+>
+
+  <div class="relative flex items-end justify-start h-full text-white">
+    <div class="w-full bg-[#f7f7f7] pb-10">
+      <h1 class="text-4xl font-bold text-primary">
+        Hello, my name is
+        <span class="text-black">Slobodan</span>
+
+        <p class="text-3xl py-3">I am a Web Developer</p>
+      </h1>
+      <button
+        class="relative px-4 py-2 border-2 text-xl border-primary bg-transparent text-primary font-bold transition-all duration-300 ease-in-out overflow-hidden group"
+        {{on "click" this.goToIntroSection}}
+      >
+        <!-- Button text -->
+        <span
+          class="relative z-10 transition-all duration-300 ease-in-out group-hover:text-white"
+        >Know more</span>
+        <span
+          class="absolute inset-0 bg-primary transition-all duration-300 ease-in-out group-hover:w-full w-0 z-0"
+        ></span>
+      </button>
+
+    </div>
+  </div>
+</section>

@@ -1,5 +1,12 @@
-{{page-title "MyProject"}}
+<div class="mx-auto">
+  <HeroImage />
+  <Intro />
+  <Projects />
+  <Contact />
+  <Footer
+    @currentYear={{this.currentYear}}
+    @networks={{this.networks}}
+    @isGithubButtonsEnabled={{this.isGithubButtonsEnabled}}
+  />
 
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+</div>

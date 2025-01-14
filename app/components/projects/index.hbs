@@ -1,0 +1,72 @@
+<section id="projects" class="text-dark-blue p-3 md:px-[15%] bg-left bg-cover">
+
+  <h2 class="text-3xl font-bold text-center mb-12">PROJECTS</h2>
+
+  {{#each this.projects as |project|}}
+    <div class="mb-20 gap-10 lg:flex lg:justify-start lg:items-start">
+
+      <!-- Project Text -->
+      <div class="text-left lg:w-1/2 mb-8 lg:mb-0">
+        <h3
+          class="font-bold text-secondary text-2xl mb-4"
+        >{{project.title}}</h3>
+        <p class="mb-4">{{project.info}}</p>
+        <p class="mb-4 text-sm text-gray-500">{{project.info2}}</p>
+        <a
+          href="{{project.url}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative px-4 mr-3 pointer py-2 border-2 border-secondary bg-white text-secondary font-bold transition-all duration-300 ease-in-out overflow-hidden group"
+        >
+          <span
+            class="relative h-full w-full z-10 transition-all duration-300 ease-in-out group-hover:text-white"
+          >See live</span>
+          <span
+            class="absolute inset-0 bg-secondary transition-all duration-300 ease-in-out group-hover:w-full w-0 z-0"
+          ></span>
+        </a>
+
+        {{#if project.repo}}
+          <a
+            href="{{project.url}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative px-4 mr-3 pointer py-2 border-2 border-secondary bg-white text-secondary font-bold transition-all duration-300 ease-in-out overflow-hidden group"
+          >
+            <span
+              class="relative h-full w-full z-10 transition-all duration-300 ease-in-out group-hover:text-white"
+            >Sourse code</span>
+            <span
+              class="absolute inset-0 bg-secondary transition-all duration-300 ease-in-out group-hover:w-full w-0 z-0"
+            ></span>
+          </a>
+        {{/if}}
+      </div>
+
+      <!-- Project Image with Tilt Effect -->
+      <div class="lg:w-1/2">
+        <a
+          href="{{project.url}}"
+          target="_blank"
+          aria-label="Project Link"
+          rel="noopener noreferrer"
+        >
+          <div class="relative">
+            <div
+              data-tilt
+              class="border border-gray-200 shadow-lg transition-transform duration-500 ease-out transform hover:scale-95 hover:shadow-2xl"
+            >
+              <img
+                src={{get-image-path project.img}}
+                alt="{{project.title}}"
+                class="rounded-lg max-h-[400px] w-full object-fill"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  {{/each}}
+
+</section>
