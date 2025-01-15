@@ -1,7 +1,4 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
-
 body {
-    font-family: 'Montserrat', sans-serif;
-   background-color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
 }
