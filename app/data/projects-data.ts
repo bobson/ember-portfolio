@@ -4,7 +4,7 @@ export const projectsData: Project[] = [
   {
     img: 'php_react_full.png',
     title: 'Full stack PHP and React',
-    info: 'I built a web app with a PHP backend using OOP principles, React with TypeScript for a scalable frontend, and TailwindCSS for responsive design. Docker is used for containerization, ensuring consistent environments across development and production.',
+    info: 'I built a web app with a PHP backend using OOP principles, MySQL Database and React with TypeScript for a scalable frontend, and TailwindCSS for responsive design. Docker is used for containerization, ensuring consistent environments across development and production.',
     url: 'https://lively-elf-21a729.netlify.app/all',
     repo: 'https://bitbucket.org/slobodan3/scandi_frontend/src/master/', // if no repo, the button will not show up
   },
