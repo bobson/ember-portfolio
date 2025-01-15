@@ -9,7 +9,7 @@
     >
 
       <!-- Project Text -->
-      <div class="text-left lg:w-1/2 mb-8 lg:mb-0">
+      <div data-aos="zoom-in" class="text-left lg:w-1/2 mb-8 lg:mb-0">
         <h3
           class="font-bold text-secondary text-2xl mb-4"
         >{{project.title}}</h3>
@@ -47,7 +47,7 @@
       </div>
 
       <!-- Project Image with Tilt Effect -->
-      <div class="lg:w-1/2">
+      <div data-aos="flip-up" class="lg:w-1/2">
         <a
           href="{{project.url}}"
           target="_blank"
@@ -56,12 +56,12 @@
         >
           <div class="relative bg-gray">
             <div
-              class="border border-gray-200 shadow-lg transition-transform duration-500 ease-out transform hover:scale-105 hover:shadow-2xl"
+              class="border overflow-hidden border-gray-200 shadow-lg transition-transform duration-500 ease-out transform hover:shadow-2xl"
             >
               <img
                 src={{get-image-path project.img}}
                 alt="{{project.title}}"
-                class="rounded-lg max-h-[400px] w-full object-fill"
+                class="rounded-lg max-h-[400px] w-full object-fill hover:scale-110 transition-transform duration-500 ease-out"
               />
 
             </div>

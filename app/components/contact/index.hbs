@@ -26,6 +26,7 @@
   <!-- Modal -->
   {{#if this.isModalOpen}}
     <div
+      data-aos="zoom-out-down"
       id="modal"
       class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 z-20"
     >
@@ -40,6 +41,7 @@
               type="text"
               class="w-full px-3 py-2 border border-gray-300 rounded-lg"
               placeholder="Your name"
+              required
             />
           </div>
           <div class="mb-4">
@@ -49,6 +51,7 @@
               type="email"
               class="w-full px-3 py-2 border border-gray-300 rounded-lg"
               placeholder="Your email"
+              required
             />
           </div>
           <div class="mb-4">
@@ -58,21 +61,33 @@
               rows="4"
               class="w-full px-3 py-2 border border-gray-300 rounded-lg"
               placeholder="Your message"
+              required
             ></textarea>
           </div>
-          <div class="flex justify-end">
+          <div class="flex justify-end gap-3">
             <button
-              type="button"
-              class="bg-gray-500 text-white px-6 py-2 rounded-lg mr-2 hover:bg-gray-600"
+              class="relative px-3 py-1 border-2 text-xl border-[#e53935] bg-[#e53935] text-white font-bold transition-all duration-300 ease-in-out overflow-hidden group"
               {{on "click" this.closeModal}}
             >
-              Close
+              <!-- Button text -->
+              <span
+                class="relative z-10 transition-all duration-300 ease-in-out group-hover:text-[#e53935]"
+              >Close</span>
+              <span
+                class="absolute inset-0 bg-white transition-all duration-300 ease-in-out group-hover:w-full w-0 z-0"
+              ></span>
             </button>
             <button
               type="submit"
-              class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600"
+              class="relative px-3 py-1 border-2 text-xl border-primary bg-primary text-white font-bold transition-all duration-300 ease-in-out overflow-hidden group"
             >
-              Send Message
+              <!-- Button text -->
+              <span
+                class="relative z-10 transition-all duration-300 ease-in-out group-hover:text-primary"
+              >Send Message</span>
+              <span
+                class="absolute inset-0 bg-white transition-all duration-300 ease-in-out group-hover:w-full w-0 z-0"
+              ></span>
             </button>
           </div>
         </form>

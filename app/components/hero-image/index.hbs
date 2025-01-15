@@ -6,13 +6,17 @@
     style="background-image: url('/images/hero.png');"
   >
     <div>
-      <h1 class="text-4xl backdrop-blur-sm font-bold text-primary">
+      <h1
+        data-aos="fade-right"
+        class="text-4xl backdrop-blur-sm font-bold text-primary"
+      >
         Hello, my name is
         <span class="text-black">Slobodan</span>
 
         <p class="text-3xl py-3">I am a Web Developer</p>
       </h1>
       <button
+        data-aos="fade-up"
         class="relative px-4 py-2 border-2 text-xl border-primary bg-transparent text-primary font-bold transition-all duration-300 ease-in-out overflow-hidden group"
         {{on "click" this.goToIntroSection}}
       >
