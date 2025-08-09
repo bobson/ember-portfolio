@@ -1,6 +1,13 @@
 import type { Project } from './project-types';
 
 export const projectsData: Project[] = [
+   {
+    img: 'clinic-app.png',
+    title: 'Clinic Managment App',
+    info: 'Developed a full-featured clinic management application using Next.js, TypeScript, Ant Design, GraphQL, Apollo Client, and MongoDB. Implemented appointment booking, patient records, authentication, and responsive UI, mirroring production-ready workflows and technologies used in industry.',
+    url: 'https://clinic-frontend-zeta.vercel.app/',
+    repo: 'https://github.com/bobson/clinic-frontend.git', // if no repo, the button will not show up
+  },
   {
     img: 'php_react_full.png',
     title: 'Full stack PHP and React',
